@@ -5515,7 +5515,7 @@ weighted   avg | 0.9649 | 0.9649 | 0.9649 | 114
 
 ![Screenshot 2024-07-06 015207](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/a0666d04-7aec-42b0-b7a4-0d236f21226b)
 
-**### Conclusion**
+**Conclusion**
 
 •	Best Model: SVM with GridSearchCV (Accuracy: 98.25%, AUC: 0.99)
 
