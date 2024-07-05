@@ -1,6 +1,6 @@
 ### Breast Cancer Diagnosis Prediction
 
-###**Introduction**
+**Introduction**
 
 This report details the process of building and evaluating machine learning models to predict breast cancer diagnosis based on clinical and cell images features. The dataset used contains 569 instances with 30 features and 1 target variable.
 
