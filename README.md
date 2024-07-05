@@ -1,27 +1,41 @@
-Read Conclusion File for more Information
+### **Iris Classification using Neural Network**
 
-Additional Details
+**Introduction**
 
-Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.  They describe characteristics of the cell nuclei present in the image. A few of the images can be found at http://www.cs.wisc.edu/~street/images/
+The Iris dataset is a well-known dataset in the field of machine learning and statistics. It contains 150 samples of iris flowers, with 50 samples each from three species: Iris-setosa, Iris-versicolor, and Iris-virginica. Each sample has four features: Sepal Length, Sepal Width, Petal Length, and Petal Width. The goal is to classify the species of the iris flower based on these features. In this project, we used a neural network implemented in PyTorch to classify the iris species.
 
-Separating plane described above was obtained using Multisurface Method-Tree (MSM-T) [K. P. Bennett, "Decision Tree Construction Via Linear Programming." Proceedings of the 4th Midwest Artificial Intelligence and Cognitive Science Society, pp. 97-101, 1992], a classification method which uses linear programming to construct a decision tree.  Relevant features were selected using an exhaustive search in the space of 1-4 features and 1-3 separating planes.
+Data Preparation
 
-The actual linear program used to obtain the separating plane in the 3-dimensional space is that described in: [K. P. Bennett and O. L. Mangasarian: "Robust Linear Programming Discrimination of Two Linearly Inseparable Sets", Optimization Methods and Software 1, 1992, 23-34].
+The dataset was loaded using Pandas and visualized using Matplotlib and Seaborn. The species column was converted from categorical to numerical values (0, 1, and 2) for Iris-setosa, Iris-versicolor, and Iris-virginica respectively.
 
-This database is also available through the UW CS ftp server:
-ftp ftp.cs.wisc.edu
-cd math-prog/cpo-dataset/machine-learn/WDBC/
+**Data Visualization**
 
-Has Missing Values?
+Visualized the Sepal Length for each species to get a sense of the distribution.
 
-No
+![Screenshot 2024-07-06 010605](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/c992bf44-db6a-4449-a530-7d61fc9b83f8)
 
-Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W.. (1995). Breast Cancer Wisconsin (Diagnostic). UCI Machine Learning Repository. https://doi.org/10.24432/C5DW2B.
+**Model Definition**
 
-@misc{misc_breast_cancer_wisconsin_(diagnostic)_17,
-  author       = {Wolberg,William, Mangasarian,Olvi, Street,Nick, and Street,W.},
-  title        = {{Breast Cancer Wisconsin (Diagnostic)}},
-  year         = {1995},
-  howpublished = {UCI Machine Learning Repository},
-  note         = {{DOI}: https://doi.org/10.24432/C5DW2B}
-}
+We defined a neural network model with two hidden layers. The input layer has four neurons (one for each feature), the first hidden layer has eight neurons, the second hidden layer has seven neurons, and the output layer has three neurons (one for each species).
+
+**Training the Model**
+
+The model was trained using the Adam optimizer and ‘CrossEntropyLoss’ as the loss function. The dataset was split into training and test sets. We trained the model for 100 epochs and recorded the training and validation losses.
+
+![Screenshot 2024-07-06 010548](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/47da71a6-1d56-484a-96fc-6cc7b09bbf6f)
+
+**Results**
+
+The training and validation losses decreased consistently over the epochs, indicating that the model was learning well. We achieved 100% accuracy on the test set.
+
+**Evaluation Metrics**
+
+We evaluated the model's performance using precision, recall, and F1 score, all of which were perfect.
+
+**Conclusion**
+
+The neural network model successfully classified the Iris dataset with high accuracy. The loss curves indicated proper learning, and the evaluation metrics confirmed the model's effectiveness. This project demonstrates the power of neural networks for classification tasks and the importance of proper data preprocessing and visualization.
+
+**Future Work**
+
+Further improvements can be made by experimenting with different network architectures, regularization techniques, and hyperparameter tuning. Additionally, implementing cross-validation can provide a more robust evaluation of the model's performance.
