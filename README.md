@@ -1,20 +1,20 @@
-### Breast Cancer Diagnosis Prediction
+# Breast Cancer Diagnosis Prediction
 
-**Introduction**
+# **Introduction**
 
 This report details the process of building and evaluating machine learning models to predict breast cancer diagnosis based on clinical and cell images features. The dataset used contains 569 instances with 30 features and 1 target variable.
 
-### **Data Exploration and Preprocessing**
+# **Data Exploration and Preprocessing**
 
 **Data Overview**
 
-**The dataset includes:**
+# **The dataset includes:**
 
 •	569 instances with no missing values
 
 •	30 numerical features and 1 categorical target variable (Diagnosis)
 
-### **Exploratory Data Analysis (EDA)**
+#  **Exploratory Data Analysis (EDA)**
 
 **Histograms of Features**
 
@@ -32,7 +32,7 @@ This report details the process of building and evaluating machine learning mode
 ![Screenshot 2024-07-06 011707](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/c21de6f7-deb8-4479-9363-347c14dbdeb7)
 ![Screenshot 2024-07-06 012508](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/6c842133-fa70-43c8-b353-ca7c237ce091)
 
-### **Class Imbalance Check**
+# **Class Imbalance Check**
 
 **Class Distribution:**
 
@@ -44,7 +44,7 @@ This report details the process of building and evaluating machine learning mode
      
    -  **Recommendation:** Since the dataset is slightly imbalanced (ratio < 0.5), oversampling techniques could be considered.
 
-**Data Preprocessing**
+# **Data Preprocessing**
 
 •	**Drop ID Column:** Removed 'ID' column as it does not contribute to prediction.
 
@@ -52,9 +52,9 @@ This report details the process of building and evaluating machine learning mode
 
 •	**Train-Test Split:** Split the data into training (80%) and testing (20%) sets for model evaluation.
 
-### **Model Building and Evaluation**
+# **Model Building and Evaluation**
 
-### **Logistic Regression**
+# **Logistic Regression**
 
 <html xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -831,7 +831,7 @@ weighted   avg | 0.9829 | 0.9825 | 0.9823 | 114
 
 ![Screenshot 2024-07-06 013803](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/f234cdb1-f5b9-4eeb-a33f-a31675d25395)
 
-**Logistic Regression Classifier with Hyperparameter Tuning**
+# **Logistic Regression Classifier with Hyperparameter Tuning**
 
 Optimized Model using GridSearchCV.
 
@@ -1610,7 +1610,7 @@ weighted   avg | 0.9913 | 0.9912 | 0.9912 | 114
 
 </html>
 
-**Random Forest Classifier**
+# **Random Forest Classifier**
 
 <html xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -2387,7 +2387,7 @@ weighted   avg | 0.9649 | 0.9649 | 0.9649 | 114
 
 ![Screenshot 2024-07-06 014226](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/c69d4864-2b79-4d5f-b97f-08a095b74775)
 
-**Support Vector Machine (SVM)**
+# **Support Vector Machine (SVM)**
 
 <html xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -3164,7 +3164,7 @@ weighted   avg | 0.9560 | 0.9561 | 0.9560 | 114
 
 ![Screenshot 2024-07-06 014520](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/bf4a8a40-cd98-4760-a4d2-551701410615)
 
-**SVM Classifier with Hyperparameter Tuning**
+# **SVM Classifier with Hyperparameter Tuning**
 
 GridSearchCV Optimized SVM
 
@@ -3180,7 +3180,7 @@ C: 100, Gamma: 0.01, Kernel: 'rbf' (Radial Basis Function (RBF) kernel, also kno
 •	Precision (Malignant): 1.0
 •	Recall (Malignant): 0.97
 
-### **K-Nearest Neighbors Classifier**
+# **K-Nearest Neighbors Classifier**
 
 <html xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -3956,8 +3956,7 @@ weighted   avg | 0.9649 | 0.9649 | 0.9649 | 114
 </html>
 
 ![Screenshot 2024-07-06 014914](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/489c8dfa-1412-42e5-b3df-1911339c1795)
-
-### **Decision Tree Classifier**
+# **Decision Tree Classifier**
 
 <html xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -4732,11 +4731,11 @@ weighted   avg | 0.9566 | 0.9561 | 0.9563 | 114
 
 </html>
 
-**Hyperparameters tuning with Decision Tree**
+# **Hyperparameters tuning with Decision Tree**
 
 GridSearchCV Optimized SVM
 
-**•	Best Parameters:**
+# Best Parameters:
 
 Criterion (gini, entropy) , max_depth , min_samples_split , min_samples_leaf
 
@@ -5515,7 +5514,7 @@ weighted   avg | 0.9649 | 0.9649 | 0.9649 | 114
 
 ![Screenshot 2024-07-06 015207](https://github.com/KanchanaWijesooriya/Machine-Learning-Classification-and-Regression/assets/160541254/a0666d04-7aec-42b0-b7a4-0d236f21226b)
 
-**Conclusion**
+# **Conclusion**
 
 •	Best Model: SVM with GridSearchCV (Accuracy: 98.25%, AUC: 0.99)
 
